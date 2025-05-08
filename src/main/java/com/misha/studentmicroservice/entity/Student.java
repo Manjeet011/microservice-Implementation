@@ -13,6 +13,15 @@ public class Student {
     private String gender;
     private Integer schoolId;
 
+    private String password;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getId() {
         return id;
@@ -55,6 +64,14 @@ public class Student {
     }
 
     public Student() {
+    }
+
+    public Student(String name, int age, String gender, Integer schoolId, String password) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.schoolId = schoolId;
+        this.password = password;
     }
 
     public Student(String name, int age, String gender, Integer schoolId) {
