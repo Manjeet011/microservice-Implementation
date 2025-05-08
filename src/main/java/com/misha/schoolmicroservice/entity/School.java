@@ -19,6 +19,9 @@ public class School {
     private String location;
     private String principalName;
 
+    private String password;
+
+
     public Long getId() {
         return id;
     }
@@ -52,6 +55,21 @@ public class School {
     }
 
     public School() {
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public School(String schoolName, String location, String principalName, String password) {
+        this.schoolName = schoolName;
+        this.location = location;
+        this.principalName = principalName;
+        this.password = password;
     }
 
     public School(String schoolName, String location, String principalName) {
